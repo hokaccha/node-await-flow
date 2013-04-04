@@ -2,6 +2,11 @@
 
 A simple async/await module, abstraction of node-fibers.
 
+similar to
+
+* [synchronize](https://github.com/alexeypetrushin/synchronize)
+* [asyncblock](https://github.com/scriby/asyncblock)
+
 ## Usage:
 
 basic
