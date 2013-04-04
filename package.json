@@ -1,0 +1,29 @@
+{
+  "name": "node-await-flow",
+  "version": "0.0.1",
+  "description": "A simple async/await module, abstraction of node-fibers.",
+  "main": "index.js",
+  "dependencies": {
+    "fibers": "1.0.0"
+  },
+  "devDependencies": {
+    "expect.js": "0.2.x",
+    "mocha": "1.9.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hokaccha/node-await-flow.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "flow",
+    "fiber",
+    "coroutine"
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "Kazuhito Hokamura <k.hokamura@gmail.com>",
+  "license": "MIT"
+}
