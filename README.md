@@ -33,9 +33,9 @@ var AwaitFlow = require('await-flow');
 var fs = require('fs');
 
 AwaitFlow.run(function(await) {
-  var filepath = '/foo/bar/baz';
   var content = await(function(next) {
-    fs.readFile(filepath, 'utf8', next);
+    // not exists file
+    fs.readFile('/foo/bar/baz', 'utf8', next);
   });
 
   console.log(content); // This line will not be executed
