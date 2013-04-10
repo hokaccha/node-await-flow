@@ -88,7 +88,7 @@ describe('AwaitFlow.run', function() {
     result.push(1);
   });
 
-  it('should be able to nested', function(done) {
+  it('should be able to nest', function(done) {
     var result = [];
     AwaitFlow.run(function(await) {
       await(function(next) {
@@ -113,6 +113,15 @@ describe('AwaitFlow.run', function() {
       result.push(6);
       expect(result).to.eql([1, 2, 3, 4, 5, 6]);
       done(err);
+    });
+  });
+
+  it('should pass return value to callback',  function(done) {
+    AwaitFlow.run(function(await) {
+      return 'foo';
+    }, function(err, result) {
+      expect(result).to.be('foo');
+      done();
     });
   });
 });
