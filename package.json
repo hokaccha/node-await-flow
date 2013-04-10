@@ -1,5 +1,5 @@
 {
-  "name": "node-await-flow",
+  "name": "await-flow",
   "version": "0.0.1",
   "description": "A simple async/await module, abstraction of node-fibers.",
   "main": "index.js",
